@@ -17,6 +17,8 @@ namespace Gui_Assignment
     public partial class PlayerRegistration : Form
     {
         private static ParentRegistration? parentRegistrationForm;
+
+        // int age;
         public PlayerRegistration()
         {
             InitializeComponent();
@@ -87,6 +89,42 @@ namespace Gui_Assignment
         {
             // this closes the form
             this.Close();
+        }
+
+        private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Not a valid age");
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            DateTime DateOfBirth = dateOfBirth.Value;
+            DateTime Today = DateTime.Now;
+            int plyrsAge = Today.Year - DateOfBirth.Year;
+
+            if (DateOfBirth > Today.AddYears(-plyrsAge))
+            {
+                plyrsAge--;
+            }
+            MessageBox.Show("Your Age is " + plyrsAge);
+            playersAge.Text = plyrsAge.ToString();
+        }
+
+        private void playersAge_Click(object sender, EventArgs e)
+        {
+            // playersAge.Text = plyrsAge;
+        }
+
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

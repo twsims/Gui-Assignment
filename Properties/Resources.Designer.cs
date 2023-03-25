@@ -69,5 +69,16 @@ namespace Gui_Assignment.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tbojoe_An_official_basketball_court_featuring_a_stunning_purple_2face9d9_5fa8_40d3_996e_5372bc7b91a1 {
+            get {
+                object obj = ResourceManager.GetObject("tbojoe_An_official_basketball_court_featuring_a_stunning_purple_2face9d9-5fa8-40d" +
+                        "3-996e-5372bc7b91a1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
