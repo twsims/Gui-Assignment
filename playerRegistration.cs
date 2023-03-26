@@ -17,6 +17,7 @@ namespace Gui_Assignment
     public partial class PlayerRegistration : Form
     {
         private static ParentRegistration? parentRegistrationForm;
+        private static PlayerRegistration? playerRegistrationForm;
 
         // int age;
         public PlayerRegistration()
@@ -115,6 +116,7 @@ namespace Gui_Assignment
             }
             MessageBox.Show("Your Age is " + plyrsAge);
             playersAge.Text = plyrsAge.ToString();
+
         }
 
         private void playersAge_Click(object sender, EventArgs e)
@@ -124,7 +126,28 @@ namespace Gui_Assignment
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            /* This allows the menu strip to go directly to the parent registration.  
+             */
+            MessageBox.Show("You have completed player registration! Please provide parent informaton");
+            parentRegistrationForm = new ParentRegistration();
+            parentRegistrationForm.BringToFront();
+            parentRegistrationForm.Show();
+            this.Hide();
+        }
 
+        private void addAPlayerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addAPlayerToolStripMenuItem_Click_1(object sender, EventArgs e)
+        {
+            /* This goes straight to the player registration from the menu selection. Then brings up the form and hides the menu selection*/
+            MessageBox.Show("You have successfully logged in.  Welcome to EBS!");
+            playerRegistrationForm = new PlayerRegistration();
+            playerRegistrationForm.BringToFront();
+            playerRegistrationForm.Show();
+            //this.Hide();
         }
     }
 }
