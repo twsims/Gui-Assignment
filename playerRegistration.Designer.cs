@@ -313,6 +313,7 @@
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(218, 23);
             textBox8.TabIndex = 24;
+            textBox8.Leave += textBox8_Leave;
             // 
             // label7
             // 
@@ -378,6 +379,7 @@
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(218, 23);
             textBox9.TabIndex = 31;
+            textBox9.Leave += textBox9_Leave;
             // 
             // button1
             // 
@@ -454,13 +456,13 @@
             // addATeamToolStripMenuItem
             // 
             addATeamToolStripMenuItem.Name = "addATeamToolStripMenuItem";
-            addATeamToolStripMenuItem.Size = new Size(180, 22);
+            addATeamToolStripMenuItem.Size = new Size(142, 22);
             addATeamToolStripMenuItem.Text = "Add a Team";
             // 
             // addAPlayerToolStripMenuItem
             // 
             addAPlayerToolStripMenuItem.Name = "addAPlayerToolStripMenuItem";
-            addAPlayerToolStripMenuItem.Size = new Size(180, 22);
+            addAPlayerToolStripMenuItem.Size = new Size(142, 22);
             addAPlayerToolStripMenuItem.Text = "Add a Player";
             addAPlayerToolStripMenuItem.Click += addAPlayerToolStripMenuItem_Click_1;
             // 

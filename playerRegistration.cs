@@ -12,6 +12,9 @@ research.  I believe the next assignment will be a considerable drop in time spe
 can be easily added.  I will spend more time on the syntax of the code I need versus understanding the component itself. 
  */
 
+using System.Security.Cryptography.X509Certificates;
+using System.Text.RegularExpressions;
+
 namespace Gui_Assignment
 {
     public partial class PlayerRegistration : Form
@@ -149,5 +152,75 @@ namespace Gui_Assignment
             playerRegistrationForm.Show();
             //this.Hide();
         }
-    }
+
+        private void textBox8_Leave(object sender, EventArgs e)
+        {
+            string emailAddress = textBox8.Text;
+
+            if (IsValidEmail(emailAddress))
+            {
+                MessageBox.Show("The email address is valid");
+            }
+            else
+            {
+                MessageBox.Show("The email address is NOT valid!");
+            }
+        }
+        public static bool IsValidEmail(string emailAddress)
+        {
+            if (string.IsNullOrWhiteSpace(emailAddress))
+            {
+                return false;
+            }
+
+            try
+            {
+                // I had to look up this string pattern to validate email address
+                string pattern = @"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*"
+                                   + "@"
+                                   + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))\z";
+                Regex regex = new Regex(pattern);
+                return regex.IsMatch(emailAddress);
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+
+        private void textBox9_Leave(object sender, EventArgs e)
+        {
+            string phoneNumber = textBox9.Text;
+
+            if (IsValidPhoneNumber(phoneNumber)) 
+            {
+                MessageBox.Show("Looks like a good number.");
+            }
+            else
+            {
+                MessageBox.Show("This is not a phone number!");
+            }
+        }
+        public static bool IsValidPhoneNumber(string phoneNumber)
+        {
+            if (string.IsNullOrWhiteSpace(phoneNumber))
+            {
+                return false;
+            }
+
+            try
+            {
+                //I had to look up the pattern for checking for phone numbers
+                string pattern = @"^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$";
+                Regex regex = new Regex(pattern);
+                return regex.IsMatch(phoneNumber);
+            }
+            catch (Exception)
+            {
+
+                return false;
+            }
+        }
+    }   
 }
