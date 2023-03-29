@@ -60,26 +60,17 @@
             calAge = new Button();
             playersAge = new Label();
             menuStrip1 = new MenuStrip();
-            fileToolStripMenuItem = new ToolStripMenuItem();
-            quitToolStripMenuItem = new ToolStripMenuItem();
-            playerToolStripMenuItem = new ToolStripMenuItem();
-            addATeamToolStripMenuItem = new ToolStripMenuItem();
-            addAPlayerToolStripMenuItem = new ToolStripMenuItem();
-            parentToolStripMenuItem = new ToolStripMenuItem();
-            addToolStripMenuItem = new ToolStripMenuItem();
-            aboutToolStripMenuItem = new ToolStripMenuItem();
             button2 = new Button();
             ((System.ComponentModel.ISupportInitialize)playerImage).BeginInit();
-            menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
             // plySubmit
             // 
             plySubmit.BackColor = Color.Plum;
-            plySubmit.Location = new Point(569, 443);
-            plySubmit.Margin = new Padding(2, 1, 2, 1);
+            plySubmit.Location = new Point(813, 738);
+            plySubmit.Margin = new Padding(3, 2, 3, 2);
             plySubmit.Name = "plySubmit";
-            plySubmit.Size = new Size(91, 27);
+            plySubmit.Size = new Size(130, 45);
             plySubmit.TabIndex = 0;
             plySubmit.Text = "Submit";
             plySubmit.UseVisualStyleBackColor = false;
@@ -91,10 +82,9 @@
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label1.ForeColor = Color.Transparent;
-            label1.Location = new Point(213, 118);
-            label1.Margin = new Padding(2, 0, 2, 0);
+            label1.Location = new Point(304, 197);
             label1.Name = "label1";
-            label1.Size = new Size(70, 15);
+            label1.Size = new Size(108, 25);
             label1.TabIndex = 1;
             label1.Text = "First Name:";
             label1.Click += Label1_Click;
@@ -105,38 +95,37 @@
             v.BackColor = Color.Transparent;
             v.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             v.ForeColor = Color.Transparent;
-            v.Location = new Point(215, 149);
-            v.Margin = new Padding(2, 0, 2, 0);
+            v.Location = new Point(307, 248);
             v.Name = "v";
-            v.Size = new Size(68, 15);
+            v.Size = new Size(106, 25);
             v.TabIndex = 2;
             v.Text = "Last Name:";
             v.Click += Label2_Click;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(296, 141);
-            textBox2.Margin = new Padding(2, 1, 2, 1);
+            textBox2.Location = new Point(423, 235);
+            textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(218, 23);
+            textBox2.Size = new Size(310, 31);
             textBox2.TabIndex = 5;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(296, 115);
-            textBox3.Margin = new Padding(2, 1, 2, 1);
+            textBox3.Location = new Point(423, 192);
+            textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(218, 23);
+            textBox3.Size = new Size(310, 31);
             textBox3.TabIndex = 6;
             // 
             // dateOfBirth
             // 
             dateOfBirth.Format = DateTimePickerFormat.Short;
-            dateOfBirth.Location = new Point(297, 166);
-            dateOfBirth.Margin = new Padding(2, 1, 2, 1);
+            dateOfBirth.Location = new Point(424, 277);
+            dateOfBirth.Margin = new Padding(3, 2, 3, 2);
             dateOfBirth.MinDate = new DateTime(1900, 1, 1, 0, 0, 0, 0);
             dateOfBirth.Name = "dateOfBirth";
-            dateOfBirth.Size = new Size(108, 23);
+            dateOfBirth.Size = new Size(153, 31);
             dateOfBirth.TabIndex = 8;
             // 
             // label2
@@ -145,10 +134,9 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label2.ForeColor = Color.Transparent;
-            label2.Location = new Point(200, 172);
-            label2.Margin = new Padding(2, 0, 2, 0);
+            label2.Location = new Point(286, 287);
             label2.Name = "label2";
-            label2.Size = new Size(83, 15);
+            label2.Size = new Size(128, 25);
             label2.TabIndex = 9;
             label2.Text = "Date of Birth:";
             label2.Click += Label2_Click_1;
@@ -158,10 +146,10 @@
             playerImage.BackColor = Color.Transparent;
             playerImage.Image = Properties.Resources.EBS_Logo;
             playerImage.InitialImage = null;
-            playerImage.Location = new Point(615, 115);
-            playerImage.Margin = new Padding(2, 1, 2, 1);
+            playerImage.Location = new Point(879, 192);
+            playerImage.Margin = new Padding(3, 2, 3, 2);
             playerImage.Name = "playerImage";
-            playerImage.Size = new Size(230, 209);
+            playerImage.Size = new Size(329, 348);
             playerImage.SizeMode = PictureBoxSizeMode.Zoom;
             playerImage.TabIndex = 11;
             playerImage.TabStop = false;
@@ -173,10 +161,10 @@
             playerPosition.BackColor = Color.Transparent;
             playerPosition.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerPosition.ForeColor = Color.Transparent;
-            playerPosition.Location = new Point(432, 338);
-            playerPosition.Margin = new Padding(4, 0, 4, 0);
+            playerPosition.Location = new Point(617, 563);
+            playerPosition.Margin = new Padding(6, 0, 6, 0);
             playerPosition.Name = "playerPosition";
-            playerPosition.Size = new Size(54, 15);
+            playerPosition.Size = new Size(85, 25);
             playerPosition.TabIndex = 12;
             playerPosition.Text = "Position:";
             playerPosition.Click += Label4_Click;
@@ -185,10 +173,10 @@
             // 
             plyPosition.FormattingEnabled = true;
             plyPosition.Items.AddRange(new object[] { "PG", "SG", "SF", "PF", "C" });
-            plyPosition.Location = new Point(492, 335);
-            plyPosition.Margin = new Padding(4, 3, 4, 3);
+            plyPosition.Location = new Point(703, 558);
+            plyPosition.Margin = new Padding(6, 5, 6, 5);
             plyPosition.Name = "plyPosition";
-            plyPosition.Size = new Size(47, 23);
+            plyPosition.Size = new Size(65, 33);
             plyPosition.TabIndex = 13;
             // 
             // playerClass
@@ -197,10 +185,10 @@
             playerClass.BackColor = Color.Transparent;
             playerClass.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerClass.ForeColor = Color.Transparent;
-            playerClass.Location = new Point(450, 393);
-            playerClass.Margin = new Padding(4, 0, 4, 0);
+            playerClass.Location = new Point(643, 655);
+            playerClass.Margin = new Padding(6, 0, 6, 0);
             playerClass.Name = "playerClass";
-            playerClass.Size = new Size(36, 15);
+            playerClass.Size = new Size(59, 25);
             playerClass.TabIndex = 14;
             playerClass.Text = "Class:";
             // 
@@ -210,31 +198,31 @@
             playerSchool.BackColor = Color.Transparent;
             playerSchool.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerSchool.ForeColor = Color.Transparent;
-            playerSchool.Location = new Point(439, 364);
-            playerSchool.Margin = new Padding(4, 0, 4, 0);
+            playerSchool.Location = new Point(627, 607);
+            playerSchool.Margin = new Padding(6, 0, 6, 0);
             playerSchool.Name = "playerSchool";
-            playerSchool.Size = new Size(47, 15);
+            playerSchool.Size = new Size(74, 25);
             playerSchool.TabIndex = 15;
             playerSchool.Text = "School:";
             playerSchool.Click += Label5_Click;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(493, 361);
-            textBox4.Margin = new Padding(2, 1, 2, 1);
+            textBox4.Location = new Point(704, 602);
+            textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.MaxLength = 50;
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(144, 23);
+            textBox4.Size = new Size(204, 31);
             textBox4.TabIndex = 16;
             // 
             // cmbPlayerClass
             // 
             cmbPlayerClass.FormattingEnabled = true;
             cmbPlayerClass.Items.AddRange(new object[] { "3rd", "4th", "5th", "6th", "7th", "8th", "Fresh", "Soph", "Junior", "Senior" });
-            cmbPlayerClass.Location = new Point(492, 388);
-            cmbPlayerClass.Margin = new Padding(4, 3, 4, 3);
+            cmbPlayerClass.Location = new Point(703, 647);
+            cmbPlayerClass.Margin = new Padding(6, 5, 6, 5);
             cmbPlayerClass.Name = "cmbPlayerClass";
-            cmbPlayerClass.Size = new Size(47, 23);
+            cmbPlayerClass.Size = new Size(65, 33);
             cmbPlayerClass.TabIndex = 17;
             // 
             // lblPlayerAge
@@ -243,28 +231,28 @@
             lblPlayerAge.BackColor = Color.Transparent;
             lblPlayerAge.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lblPlayerAge.ForeColor = Color.Transparent;
-            lblPlayerAge.Location = new Point(569, 393);
-            lblPlayerAge.Margin = new Padding(4, 0, 4, 0);
+            lblPlayerAge.Location = new Point(813, 655);
+            lblPlayerAge.Margin = new Padding(6, 0, 6, 0);
             lblPlayerAge.Name = "lblPlayerAge";
-            lblPlayerAge.Size = new Size(32, 15);
+            lblPlayerAge.Size = new Size(51, 25);
             lblPlayerAge.TabIndex = 18;
             lblPlayerAge.Text = "Age:";
             lblPlayerAge.Click += Label4_Click_1;
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(296, 195);
-            textBox6.Margin = new Padding(2, 1, 2, 1);
+            textBox6.Location = new Point(423, 325);
+            textBox6.Margin = new Padding(3, 2, 3, 2);
             textBox6.Name = "textBox6";
-            textBox6.Size = new Size(218, 23);
+            textBox6.Size = new Size(310, 31);
             textBox6.TabIndex = 20;
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(296, 222);
-            textBox7.Margin = new Padding(2, 1, 2, 1);
+            textBox7.Location = new Point(423, 370);
+            textBox7.Margin = new Padding(3, 2, 3, 2);
             textBox7.Name = "textBox7";
-            textBox7.Size = new Size(218, 23);
+            textBox7.Size = new Size(310, 31);
             textBox7.TabIndex = 21;
             // 
             // label4
@@ -273,10 +261,9 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.Transparent;
-            label4.Location = new Point(253, 225);
-            label4.Margin = new Padding(2, 0, 2, 0);
+            label4.Location = new Point(361, 375);
             label4.Name = "label4";
-            label4.Size = new Size(31, 15);
+            label4.Size = new Size(50, 25);
             label4.TabIndex = 22;
             label4.Text = "City:";
             // 
@@ -286,10 +273,9 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.Transparent;
-            label5.Location = new Point(229, 198);
-            label5.Margin = new Padding(2, 0, 2, 0);
+            label5.Location = new Point(327, 330);
             label5.Name = "label5";
-            label5.Size = new Size(54, 15);
+            label5.Size = new Size(85, 25);
             label5.TabIndex = 23;
             label5.Text = "Address:";
             // 
@@ -299,19 +285,18 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.Transparent;
-            label6.Location = new Point(239, 276);
-            label6.Margin = new Padding(2, 0, 2, 0);
+            label6.Location = new Point(341, 460);
             label6.Name = "label6";
-            label6.Size = new Size(44, 15);
+            label6.Size = new Size(70, 25);
             label6.TabIndex = 25;
             label6.Text = "E-mail:";
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(296, 273);
-            textBox8.Margin = new Padding(2, 1, 2, 1);
+            textBox8.Location = new Point(423, 455);
+            textBox8.Margin = new Padding(3, 2, 3, 2);
             textBox8.Name = "textBox8";
-            textBox8.Size = new Size(218, 23);
+            textBox8.Size = new Size(310, 31);
             textBox8.TabIndex = 24;
             textBox8.Leave += textBox8_Leave;
             // 
@@ -321,10 +306,9 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Transparent;
-            label7.Location = new Point(243, 252);
-            label7.Margin = new Padding(2, 0, 2, 0);
+            label7.Location = new Point(347, 420);
             label7.Name = "label7";
-            label7.Size = new Size(40, 15);
+            label7.Size = new Size(61, 25);
             label7.TabIndex = 27;
             label7.Text = "State:";
             // 
@@ -334,29 +318,28 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.Transparent;
-            label8.Location = new Point(370, 251);
-            label8.Margin = new Padding(2, 0, 2, 0);
+            label8.Location = new Point(529, 418);
             label8.Name = "label8";
-            label8.Size = new Size(27, 15);
+            label8.Size = new Size(44, 25);
             label8.TabIndex = 29;
             label8.Text = "Zip:";
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(402, 248);
-            textBox10.Margin = new Padding(2, 1, 2, 1);
+            textBox10.Location = new Point(574, 413);
+            textBox10.Margin = new Padding(3, 2, 3, 2);
             textBox10.Name = "textBox10";
-            textBox10.Size = new Size(56, 23);
+            textBox10.Size = new Size(78, 31);
             textBox10.TabIndex = 28;
             // 
             // comboBox1
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY" });
-            comboBox1.Location = new Point(296, 248);
-            comboBox1.Margin = new Padding(1);
+            comboBox1.Location = new Point(423, 413);
+            comboBox1.Margin = new Padding(1, 2, 1, 2);
             comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(46, 23);
+            comboBox1.Size = new Size(64, 33);
             comboBox1.TabIndex = 30;
             // 
             // playerPhoneNumber
@@ -365,28 +348,27 @@
             playerPhoneNumber.BackColor = Color.Transparent;
             playerPhoneNumber.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerPhoneNumber.ForeColor = Color.Transparent;
-            playerPhoneNumber.Location = new Point(239, 304);
-            playerPhoneNumber.Margin = new Padding(2, 0, 2, 0);
+            playerPhoneNumber.Location = new Point(341, 507);
             playerPhoneNumber.Name = "playerPhoneNumber";
-            playerPhoneNumber.Size = new Size(45, 15);
+            playerPhoneNumber.Size = new Size(71, 25);
             playerPhoneNumber.TabIndex = 32;
             playerPhoneNumber.Text = "Phone:";
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(297, 301);
-            textBox9.Margin = new Padding(2, 1, 2, 1);
+            textBox9.Location = new Point(424, 502);
+            textBox9.Margin = new Padding(3, 2, 3, 2);
             textBox9.Name = "textBox9";
-            textBox9.Size = new Size(218, 23);
+            textBox9.Size = new Size(310, 31);
             textBox9.TabIndex = 31;
             textBox9.Leave += textBox9_Leave;
             // 
             // button1
             // 
-            button1.Location = new Point(464, 443);
-            button1.Margin = new Padding(2, 1, 2, 1);
+            button1.Location = new Point(663, 738);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(91, 27);
+            button1.Size = new Size(130, 45);
             button1.TabIndex = 33;
             button1.Text = "Cancel";
             button1.UseVisualStyleBackColor = true;
@@ -394,10 +376,9 @@
             // 
             // calAge
             // 
-            calAge.Location = new Point(419, 165);
-            calAge.Margin = new Padding(2);
+            calAge.Location = new Point(599, 275);
             calAge.Name = "calAge";
-            calAge.Size = new Size(93, 27);
+            calAge.Size = new Size(133, 45);
             calAge.TabIndex = 34;
             calAge.Text = "Player's Age";
             calAge.UseVisualStyleBackColor = true;
@@ -410,10 +391,9 @@
             playersAge.BorderStyle = BorderStyle.Fixed3D;
             playersAge.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playersAge.ForeColor = Color.WhiteSmoke;
-            playersAge.Location = new Point(609, 393);
-            playersAge.Margin = new Padding(2, 0, 2, 0);
+            playersAge.Location = new Point(870, 655);
             playersAge.Name = "playersAge";
-            playersAge.Size = new Size(2, 17);
+            playersAge.Size = new Size(2, 27);
             playersAge.TabIndex = 35;
             playersAge.Click += playersAge_Click;
             // 
@@ -422,90 +402,30 @@
             menuStrip1.BackColor = Color.Transparent;
             menuStrip1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             menuStrip1.ImageScalingSize = new Size(24, 24);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { fileToolStripMenuItem, playerToolStripMenuItem, parentToolStripMenuItem, aboutToolStripMenuItem });
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(4, 1, 0, 1);
-            menuStrip1.Size = new Size(1144, 24);
+            menuStrip1.Size = new Size(1634, 24);
             menuStrip1.TabIndex = 36;
             menuStrip1.Text = "menuStrip1";
-            // 
-            // fileToolStripMenuItem
-            // 
-            fileToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { quitToolStripMenuItem });
-            fileToolStripMenuItem.ForeColor = Color.White;
-            fileToolStripMenuItem.Name = "fileToolStripMenuItem";
-            fileToolStripMenuItem.Size = new Size(38, 22);
-            fileToolStripMenuItem.Text = "File";
-            // 
-            // quitToolStripMenuItem
-            // 
-            quitToolStripMenuItem.BackColor = SystemColors.ControlDark;
-            quitToolStripMenuItem.Name = "quitToolStripMenuItem";
-            quitToolStripMenuItem.Size = new Size(98, 22);
-            quitToolStripMenuItem.Text = "Quit";
-            // 
-            // playerToolStripMenuItem
-            // 
-            playerToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addATeamToolStripMenuItem, addAPlayerToolStripMenuItem });
-            playerToolStripMenuItem.ForeColor = Color.White;
-            playerToolStripMenuItem.Name = "playerToolStripMenuItem";
-            playerToolStripMenuItem.Size = new Size(49, 22);
-            playerToolStripMenuItem.Text = "Team";
-            // 
-            // addATeamToolStripMenuItem
-            // 
-            addATeamToolStripMenuItem.Name = "addATeamToolStripMenuItem";
-            addATeamToolStripMenuItem.Size = new Size(142, 22);
-            addATeamToolStripMenuItem.Text = "Add a Team";
-            // 
-            // addAPlayerToolStripMenuItem
-            // 
-            addAPlayerToolStripMenuItem.Name = "addAPlayerToolStripMenuItem";
-            addAPlayerToolStripMenuItem.Size = new Size(142, 22);
-            addAPlayerToolStripMenuItem.Text = "Add a Player";
-            addAPlayerToolStripMenuItem.Click += addAPlayerToolStripMenuItem_Click_1;
-            // 
-            // parentToolStripMenuItem
-            // 
-            parentToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { addToolStripMenuItem });
-            parentToolStripMenuItem.ForeColor = Color.White;
-            parentToolStripMenuItem.Name = "parentToolStripMenuItem";
-            parentToolStripMenuItem.Size = new Size(56, 22);
-            parentToolStripMenuItem.Text = "Parent";
-            // 
-            // addToolStripMenuItem
-            // 
-            addToolStripMenuItem.Name = "addToolStripMenuItem";
-            addToolStripMenuItem.Size = new Size(145, 22);
-            addToolStripMenuItem.Text = "Add a Parent";
-            addToolStripMenuItem.Click += addToolStripMenuItem_Click;
-            // 
-            // aboutToolStripMenuItem
-            // 
-            aboutToolStripMenuItem.ForeColor = Color.White;
-            aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            aboutToolStripMenuItem.Size = new Size(45, 22);
-            aboutToolStripMenuItem.Text = "Help";
             // 
             // button2
             // 
             button2.BackColor = Color.Plum;
-            button2.Location = new Point(686, 379);
-            button2.Margin = new Padding(2, 1, 2, 1);
+            button2.Location = new Point(980, 632);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(91, 27);
+            button2.Size = new Size(130, 45);
             button2.TabIndex = 37;
             button2.Text = "Upload Pic";
             button2.UseVisualStyleBackColor = false;
             // 
             // PlayerRegistration
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
             BackgroundImage = Properties.Resources.tbojoe_An_official_basketball_court_featuring_a_stunning_purple_2face9d9_5fa8_40d3_996e_5372bc7b91a1;
-            ClientSize = new Size(1144, 573);
+            ClientSize = new Size(1634, 955);
             Controls.Add(button2);
             Controls.Add(playersAge);
             Controls.Add(calAge);
@@ -540,13 +460,11 @@
             Controls.Add(menuStrip1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
-            Margin = new Padding(2, 1, 2, 1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "PlayerRegistration";
             Text = "Player Registration";
             Load += PlayerRegistration_Load;
             ((System.ComponentModel.ISupportInitialize)playerImage).EndInit();
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -584,14 +502,6 @@
         private Button calAge;
         private Label playersAge;
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem fileToolStripMenuItem;
-        private ToolStripMenuItem quitToolStripMenuItem;
-        private ToolStripMenuItem playerToolStripMenuItem;
-        private ToolStripMenuItem parentToolStripMenuItem;
-        private ToolStripMenuItem addToolStripMenuItem;
-        private ToolStripMenuItem aboutToolStripMenuItem;
-        private ToolStripMenuItem addATeamToolStripMenuItem;
         private Button button2;
-        private ToolStripMenuItem addAPlayerToolStripMenuItem;
     }
 }

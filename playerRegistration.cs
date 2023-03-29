@@ -193,7 +193,7 @@ namespace Gui_Assignment
         {
             string phoneNumber = textBox9.Text;
 
-            if (IsValidPhoneNumber(phoneNumber)) 
+            if (IsValidPhoneNumber(phoneNumber))
             {
                 MessageBox.Show("Looks like a good number.");
             }
@@ -222,5 +222,5 @@ namespace Gui_Assignment
                 return false;
             }
         }
-    }   
+    }
 }
