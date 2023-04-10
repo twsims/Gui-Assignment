@@ -61,6 +61,9 @@
             playersAge = new Label();
             menuStrip1 = new MenuStrip();
             button2 = new Button();
+            rosterList = new ListBox();
+            label3 = new Label();
+            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)playerImage).BeginInit();
             SuspendLayout();
             // 
@@ -414,10 +417,45 @@
             button2.Location = new Point(980, 632);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(130, 45);
+            button2.Size = new Size(148, 45);
             button2.TabIndex = 37;
-            button2.Text = "Upload Pic";
+            button2.Text = "Add to Roster";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click_1;
+            // 
+            // rosterList
+            // 
+            rosterList.FormattingEnabled = true;
+            rosterList.ItemHeight = 25;
+            rosterList.Location = new Point(1287, 271);
+            rosterList.Name = "rosterList";
+            rosterList.Size = new Size(180, 129);
+            rosterList.TabIndex = 38;
+            rosterList.Visible = false;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.Transparent;
+            label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.WhiteSmoke;
+            label3.Location = new Point(782, 561);
+            label3.Name = "label3";
+            label3.Size = new Size(100, 25);
+            label3.TabIndex = 39;
+            label3.Text = "Jersey No:";
+            label3.Click += label3_Click;
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.BackColor = Color.Transparent;
+            label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.WhiteSmoke;
+            label9.Location = new Point(888, 561);
+            label9.Name = "label9";
+            label9.Size = new Size(0, 25);
+            label9.TabIndex = 40;
             // 
             // PlayerRegistration
             // 
@@ -426,6 +464,9 @@
             BackColor = SystemColors.ControlLight;
             BackgroundImage = Properties.Resources.tbojoe_An_official_basketball_court_featuring_a_stunning_purple_2face9d9_5fa8_40d3_996e_5372bc7b91a1;
             ClientSize = new Size(1634, 955);
+            Controls.Add(label9);
+            Controls.Add(label3);
+            Controls.Add(rosterList);
             Controls.Add(button2);
             Controls.Add(playersAge);
             Controls.Add(calAge);
@@ -503,5 +544,8 @@
         private Label playersAge;
         private MenuStrip menuStrip1;
         private Button button2;
+        private ListBox rosterList;
+        private Label label3;
+        private Label label9;
     }
 }
