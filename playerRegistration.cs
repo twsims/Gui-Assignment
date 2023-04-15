@@ -20,11 +20,16 @@ store the data, but still trying to perfect the for each for a specific control.
 write it directly to the file.  I also have some issues with the Git push as it erased all my local data and I had to write the code over. So that was unexpected.  I created a text file to store text from one text box
 and created a random generator to pick a jersey number for a player. Still a week behind now with having to write the code over I may be 10 days behind. 
  
+ 4/12/2023 - update to include the arrays and list with some user string functions.  This process was a little tedious as I had to figure out how to incorporate the assingment into my project.  I initially scheduled 10 hours to review all the lectures and read the chapters
+related to the subject.  I was able to complete this section in a shorter time frame as I was able to understand the material quicker than expected.  I was able to add an array of players with a list of scores and utilizie string functions to display the information in a List box.
+This does not have any significant impact on my project but it is something I can incorporate into the project once I fine tune what I want this project to be overall.
+
  */
 
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
 using System.IO;
+using System.Xml.Schema;
 
 namespace Gui_Assignment
 {
@@ -32,6 +37,8 @@ namespace Gui_Assignment
     {
         private static ParentRegistration? parentRegistrationForm;
         private static PlayerRegistration? playerRegistrationForm;
+        private string[] roster;
+        private List<List<int>> points;
 
         private Team myTeams = new Team();
 
@@ -58,6 +65,38 @@ namespace Gui_Assignment
         public PlayerRegistration()
         {
             InitializeComponent();
+            InitializeRosterAndPoints();
+        }
+
+        private void InitializeRosterAndPoints()
+        {
+            // create a roster to store player names on the team
+            roster = new string[] { "Xavier", "Austin", "Asim", "Miles", "Orion" };
+
+            // create a list of points scored by each player
+            points = new List<List<int>>();
+
+            // create the points list for each player
+            for (int i = 0; i < roster.Length; i++)
+            {
+                points.Add(new List<int>());
+            }
+            // Add the points scored for each game
+            points[0].AddRange(new int[] { 11, 9, 15 });
+            points[1].AddRange(new int[] { 9, 3, 11 });
+            points[2].AddRange(new int[] { 20, 11, 12 });
+            points[3].AddRange(new int[] { 7, 17, 9 });
+            points[4].AddRange(new int[] { 15, 9, 13 });
+
+        }
+
+        private void DisplayRosterAndPoints()
+        {
+            rosterList.ClearSelected();
+            for (int i = 0; i < roster.Length; i++)
+            {
+                rosterList.Items.Add($"{roster[i]}'s points: {string.Join(",", points[i])}" + Environment.NewLine); // using String function to join a string and int
+            }
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -81,6 +120,10 @@ namespace Gui_Assignment
             //Flush the file and close the file
             playerFile.Flush();
             playerFile.Close();
+
+            // display player and scores in List box
+
+
 
             parentRegistrationForm = new ParentRegistration();
             parentRegistrationForm.BringToFront();
@@ -142,18 +185,6 @@ namespace Gui_Assignment
         {
             // this closes the form
             this.Close();
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-            try
-            {
-
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Not a valid age");
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -281,7 +312,9 @@ namespace Gui_Assignment
 
             }
             AddPlayer(myTeams, newPlayer);
-            //UpdateRoster() - Still implmenting this feature need additional assistance
+            // rosterList.ResetText();
+            DisplayRosterAndPoints();
+            //UpdateRoster() - Still implmenting this feature need additional assistance 
             Random JerseyNo = new Random();
             int randomNumber = JerseyNo.Next(1, 99);
             label9.Text = randomNumber.ToString();

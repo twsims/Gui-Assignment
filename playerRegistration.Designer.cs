@@ -414,7 +414,7 @@
             // button2
             // 
             button2.BackColor = Color.Plum;
-            button2.Location = new Point(980, 632);
+            button2.Location = new Point(979, 632);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new Size(148, 45);
@@ -425,13 +425,14 @@
             // 
             // rosterList
             // 
+            rosterList.BackColor = Color.WhiteSmoke;
+            rosterList.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             rosterList.FormattingEnabled = true;
             rosterList.ItemHeight = 25;
-            rosterList.Location = new Point(1287, 271);
+            rosterList.Location = new Point(1255, 246);
             rosterList.Name = "rosterList";
-            rosterList.Size = new Size(180, 129);
+            rosterList.Size = new Size(284, 279);
             rosterList.TabIndex = 38;
-            rosterList.Visible = false;
             // 
             // label3
             // 
