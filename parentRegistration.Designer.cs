@@ -46,10 +46,6 @@
             parent1LastName = new Label();
             parent1 = new Label();
             checkBox1 = new CheckBox();
-            textBox1 = new TextBox();
-            textBox4 = new TextBox();
-            parent2LastName = new Label();
-            parent2FirstName = new Label();
             btnParentCancel = new Button();
             parSubmit = new Button();
             SuspendLayout();
@@ -60,7 +56,7 @@
             playerPhoneNumber.BackColor = Color.Transparent;
             playerPhoneNumber.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerPhoneNumber.ForeColor = Color.WhiteSmoke;
-            playerPhoneNumber.Location = new Point(136, 378);
+            playerPhoneNumber.Location = new Point(136, 323);
             playerPhoneNumber.Name = "playerPhoneNumber";
             playerPhoneNumber.Size = new Size(71, 25);
             playerPhoneNumber.TabIndex = 50;
@@ -68,7 +64,7 @@
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(282, 376);
+            textBox9.Location = new Point(282, 321);
             textBox9.Margin = new Padding(3, 2, 3, 2);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(309, 31);
@@ -78,8 +74,8 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY" });
-            comboBox1.Location = new Point(282, 307);
-            comboBox1.Margin = new Padding(2, 2, 2, 2);
+            comboBox1.Location = new Point(282, 252);
+            comboBox1.Margin = new Padding(2);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(64, 33);
             comboBox1.TabIndex = 48;
@@ -90,7 +86,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.WhiteSmoke;
-            label8.Location = new Point(361, 310);
+            label8.Location = new Point(361, 255);
             label8.Name = "label8";
             label8.Size = new Size(44, 25);
             label8.TabIndex = 47;
@@ -98,7 +94,7 @@
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(415, 308);
+            textBox10.Location = new Point(415, 253);
             textBox10.Margin = new Padding(3, 2, 3, 2);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(78, 31);
@@ -110,7 +106,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.WhiteSmoke;
-            label7.Location = new Point(136, 309);
+            label7.Location = new Point(136, 254);
             label7.Name = "label7";
             label7.Size = new Size(61, 25);
             label7.TabIndex = 45;
@@ -122,7 +118,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(99, 342);
+            label6.Location = new Point(99, 287);
             label6.Name = "label6";
             label6.Size = new Size(143, 25);
             label6.TabIndex = 44;
@@ -130,7 +126,7 @@
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(282, 342);
+            textBox8.Location = new Point(282, 287);
             textBox8.Margin = new Padding(3, 2, 3, 2);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(309, 31);
@@ -142,7 +138,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(136, 243);
+            label5.Location = new Point(136, 188);
             label5.Name = "label5";
             label5.Size = new Size(85, 25);
             label5.TabIndex = 42;
@@ -154,7 +150,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(136, 277);
+            label4.Location = new Point(136, 222);
             label4.Name = "label4";
             label4.Size = new Size(50, 25);
             label4.TabIndex = 41;
@@ -162,7 +158,7 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(282, 274);
+            textBox7.Location = new Point(282, 219);
             textBox7.Margin = new Padding(3, 2, 3, 2);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(309, 31);
@@ -170,7 +166,7 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(282, 241);
+            textBox6.Location = new Point(282, 186);
             textBox6.Margin = new Padding(3, 2, 3, 2);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(309, 31);
@@ -223,58 +219,18 @@
             checkBox1.BackColor = Color.Transparent;
             checkBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             checkBox1.ForeColor = Color.WhiteSmoke;
-            checkBox1.Location = new Point(19, 191);
-            checkBox1.Margin = new Padding(2, 2, 2, 2);
+            checkBox1.Location = new Point(22, 138);
+            checkBox1.Margin = new Padding(2);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(238, 29);
             checkBox1.TabIndex = 51;
             checkBox1.Text = "Same Address as Player";
             checkBox1.UseVisualStyleBackColor = false;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(282, 112);
-            textBox1.Margin = new Padding(3, 2, 3, 2);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(309, 31);
-            textBox1.TabIndex = 55;
-            // 
-            // textBox4
-            // 
-            textBox4.Location = new Point(282, 144);
-            textBox4.Margin = new Padding(3, 2, 3, 2);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(309, 31);
-            textBox4.TabIndex = 54;
-            // 
-            // parent2LastName
-            // 
-            parent2LastName.AutoSize = true;
-            parent2LastName.BackColor = Color.Transparent;
-            parent2LastName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            parent2LastName.ForeColor = Color.WhiteSmoke;
-            parent2LastName.Location = new Point(136, 149);
-            parent2LastName.Name = "parent2LastName";
-            parent2LastName.Size = new Size(106, 25);
-            parent2LastName.TabIndex = 53;
-            parent2LastName.Text = "Last Name:";
-            // 
-            // parent2FirstName
-            // 
-            parent2FirstName.AutoSize = true;
-            parent2FirstName.BackColor = Color.Transparent;
-            parent2FirstName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            parent2FirstName.ForeColor = Color.WhiteSmoke;
-            parent2FirstName.Location = new Point(136, 115);
-            parent2FirstName.Name = "parent2FirstName";
-            parent2FirstName.Size = new Size(108, 25);
-            parent2FirstName.TabIndex = 52;
-            parent2FirstName.Text = "First Name:";
-            // 
             // btnParentCancel
             // 
-            btnParentCancel.Location = new Point(215, 432);
-            btnParentCancel.Margin = new Padding(2, 2, 2, 2);
+            btnParentCancel.Location = new Point(215, 377);
+            btnParentCancel.Margin = new Padding(2);
             btnParentCancel.Name = "btnParentCancel";
             btnParentCancel.Size = new Size(115, 36);
             btnParentCancel.TabIndex = 56;
@@ -285,7 +241,7 @@
             // parSubmit
             // 
             parSubmit.BackColor = Color.Plum;
-            parSubmit.Location = new Point(377, 427);
+            parSubmit.Location = new Point(377, 372);
             parSubmit.Margin = new Padding(3, 2, 3, 2);
             parSubmit.Name = "parSubmit";
             parSubmit.Size = new Size(130, 45);
@@ -298,14 +254,10 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.tbojoe_An_official_basketball_court_featuring_a_stunning_purple_2face9d9_5fa8_40d3_996e_5372bc7b91a1;
-            ClientSize = new Size(796, 577);
+            BackColor = Color.DarkGray;
+            ClientSize = new Size(845, 518);
             Controls.Add(parSubmit);
             Controls.Add(btnParentCancel);
-            Controls.Add(textBox1);
-            Controls.Add(textBox4);
-            Controls.Add(parent2LastName);
-            Controls.Add(parent2FirstName);
             Controls.Add(checkBox1);
             Controls.Add(playerPhoneNumber);
             Controls.Add(textBox9);
@@ -324,9 +276,10 @@
             Controls.Add(parent1LastName);
             Controls.Add(parent1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "ParentRegistration";
             Text = "Parent Registration";
+            Load += ParentRegistration_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -350,10 +303,6 @@
         private Label parent1LastName;
         private Label parent1;
         private CheckBox checkBox1;
-        private TextBox textBox1;
-        private TextBox textBox4;
-        private Label parent2LastName;
-        private Label parent2FirstName;
         private Button btnParentCancel;
         private Button parSubmit;
     }

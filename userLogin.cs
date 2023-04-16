@@ -28,5 +28,10 @@ namespace Gui_Assignment
             PlayerRegistrationForm.Show();
             this.Hide();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }
