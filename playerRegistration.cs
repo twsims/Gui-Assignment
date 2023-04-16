@@ -24,7 +24,9 @@ and created a random generator to pick a jersey number for a player. Still a wee
 related to the subject.  I was able to complete this section in a shorter time frame as I was able to understand the material quicker than expected.  I was able to add an array of players with a list of scores and utilizie string functions to display the information in a List box.
 This does not have any significant impact on my project but it is something I can incorporate into the project once I fine tune what I want this project to be overall.
 
- */
+4/15/2023 - in this update I explored the use of inheritance and classes for my project.  This was scheduled to take roughly 4-6 hours but instead it took rougly 7-8 hours for me to fully grasp and unfortunately I am still learning the details here.  
+THe update is on the Paren registration from instead of the player registration form. THe base class is person with 3 subclasses or derived classes.  They are Parent, Player and Coach.  I provided some small encapulsation by making sure the Parent 22 or older.  Once you hit the submit button on 
+the parent registration form you will populate the inherited classes as they will loop through an array and a list of values associated to the parent, player and coach*/
 
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;

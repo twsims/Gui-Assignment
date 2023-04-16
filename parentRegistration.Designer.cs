@@ -79,7 +79,7 @@
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY" });
             comboBox1.Location = new Point(282, 307);
-            comboBox1.Margin = new Padding(2, 2, 2, 2);
+            comboBox1.Margin = new Padding(2);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(64, 33);
             comboBox1.TabIndex = 48;
@@ -224,7 +224,7 @@
             checkBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             checkBox1.ForeColor = Color.WhiteSmoke;
             checkBox1.Location = new Point(19, 191);
-            checkBox1.Margin = new Padding(2, 2, 2, 2);
+            checkBox1.Margin = new Padding(2);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(238, 29);
             checkBox1.TabIndex = 51;
@@ -274,7 +274,7 @@
             // btnParentCancel
             // 
             btnParentCancel.Location = new Point(215, 432);
-            btnParentCancel.Margin = new Padding(2, 2, 2, 2);
+            btnParentCancel.Margin = new Padding(2);
             btnParentCancel.Name = "btnParentCancel";
             btnParentCancel.Size = new Size(115, 36);
             btnParentCancel.TabIndex = 56;
@@ -299,7 +299,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.tbojoe_An_official_basketball_court_featuring_a_stunning_purple_2face9d9_5fa8_40d3_996e_5372bc7b91a1;
-            ClientSize = new Size(796, 577);
+            ClientSize = new Size(970, 714);
             Controls.Add(parSubmit);
             Controls.Add(btnParentCancel);
             Controls.Add(textBox1);
@@ -324,9 +324,10 @@
             Controls.Add(parent1LastName);
             Controls.Add(parent1);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "ParentRegistration";
             Text = "Parent Registration";
+            Load += ParentRegistration_Load;
             ResumeLayout(false);
             PerformLayout();
         }
