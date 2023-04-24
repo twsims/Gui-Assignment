@@ -26,7 +26,13 @@ This does not have any significant impact on my project but it is something I ca
 
 4/15/2023 - in this update I explored the use of inheritance and classes for my project.  This was scheduled to take roughly 4-6 hours but instead it took rougly 7-8 hours for me to fully grasp and unfortunately I am still learning the details here.  
 THe update is on the Paren registration from instead of the player registration form. THe base class is person with 3 subclasses or derived classes.  They are Parent, Player and Coach.  I provided some small encapulsation by making sure the Parent 22 or older.  Once you hit the submit button on 
-the parent registration form you will populate the inherited classes as they will loop through an array and a list of values associated to the parent, player and coach*/
+the parent registration form you will populate the inherited classes as they will loop through an array and a list of values associated to the parent, player and coach
+
+4/22/2023 - This session was to make UI changes to simplify the user interface.  I am not a very creative person (design wise) so I made it as simple as I could.  The background image was very large which was causing an issue when loading
+so I removed the 4K image and switched to a smoke gray background that allowed the white font to stand out.  Next was to properly align all the text boxes, date picker and combo boxes to allow for a simple interface.
+This allowed the application to flow smoothly.  The user login screen we added a forgot username/password link that is currently only pointing to a website but I need to add a databse component to get that piece to work. THis took roughly 5 hours as I spent the majority of my time
+reviewing UI sites to get a better understanding of interface design.   
+ */
 
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;

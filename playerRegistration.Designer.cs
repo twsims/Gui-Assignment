@@ -70,7 +70,7 @@
             // plySubmit
             // 
             plySubmit.BackColor = Color.Plum;
-            plySubmit.Location = new Point(535, 618);
+            plySubmit.Location = new Point(241, 609);
             plySubmit.Margin = new Padding(3, 2, 3, 2);
             plySubmit.Name = "plySubmit";
             plySubmit.Size = new Size(130, 45);
@@ -149,7 +149,7 @@
             playerImage.BackColor = Color.Transparent;
             playerImage.Image = Properties.Resources.EBS_Logo;
             playerImage.InitialImage = null;
-            playerImage.Location = new Point(601, 72);
+            playerImage.Location = new Point(534, 64);
             playerImage.Margin = new Padding(3, 2, 3, 2);
             playerImage.Name = "playerImage";
             playerImage.Size = new Size(329, 348);
@@ -164,7 +164,7 @@
             playerPosition.BackColor = Color.Transparent;
             playerPosition.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerPosition.ForeColor = Color.Transparent;
-            playerPosition.Location = new Point(339, 443);
+            playerPosition.Location = new Point(45, 434);
             playerPosition.Margin = new Padding(6, 0, 6, 0);
             playerPosition.Name = "playerPosition";
             playerPosition.Size = new Size(85, 25);
@@ -176,7 +176,7 @@
             // 
             plyPosition.FormattingEnabled = true;
             plyPosition.Items.AddRange(new object[] { "PG", "SG", "SF", "PF", "C" });
-            plyPosition.Location = new Point(425, 438);
+            plyPosition.Location = new Point(146, 426);
             plyPosition.Margin = new Padding(6, 5, 6, 5);
             plyPosition.Name = "plyPosition";
             plyPosition.Size = new Size(65, 33);
@@ -188,7 +188,7 @@
             playerClass.BackColor = Color.Transparent;
             playerClass.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerClass.ForeColor = Color.Transparent;
-            playerClass.Location = new Point(365, 535);
+            playerClass.Location = new Point(71, 526);
             playerClass.Margin = new Padding(6, 0, 6, 0);
             playerClass.Name = "playerClass";
             playerClass.Size = new Size(59, 25);
@@ -201,7 +201,7 @@
             playerSchool.BackColor = Color.Transparent;
             playerSchool.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerSchool.ForeColor = Color.Transparent;
-            playerSchool.Location = new Point(349, 487);
+            playerSchool.Location = new Point(55, 478);
             playerSchool.Margin = new Padding(6, 0, 6, 0);
             playerSchool.Name = "playerSchool";
             playerSchool.Size = new Size(74, 25);
@@ -211,7 +211,7 @@
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(426, 482);
+            textBox4.Location = new Point(145, 472);
             textBox4.Margin = new Padding(3, 2, 3, 2);
             textBox4.MaxLength = 50;
             textBox4.Name = "textBox4";
@@ -222,7 +222,7 @@
             // 
             cmbPlayerClass.FormattingEnabled = true;
             cmbPlayerClass.Items.AddRange(new object[] { "3rd", "4th", "5th", "6th", "7th", "8th", "Fresh", "Soph", "Junior", "Senior" });
-            cmbPlayerClass.Location = new Point(425, 527);
+            cmbPlayerClass.Location = new Point(144, 518);
             cmbPlayerClass.Margin = new Padding(6, 5, 6, 5);
             cmbPlayerClass.Name = "cmbPlayerClass";
             cmbPlayerClass.Size = new Size(65, 33);
@@ -234,7 +234,7 @@
             lblPlayerAge.BackColor = Color.Transparent;
             lblPlayerAge.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             lblPlayerAge.ForeColor = Color.Transparent;
-            lblPlayerAge.Location = new Point(535, 535);
+            lblPlayerAge.Location = new Point(238, 526);
             lblPlayerAge.Margin = new Padding(6, 0, 6, 0);
             lblPlayerAge.Name = "lblPlayerAge";
             lblPlayerAge.Size = new Size(51, 25);
@@ -368,7 +368,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(385, 618);
+            button1.Location = new Point(91, 609);
             button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
             button1.Size = new Size(130, 45);
@@ -394,7 +394,7 @@
             playersAge.BorderStyle = BorderStyle.Fixed3D;
             playersAge.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playersAge.ForeColor = Color.WhiteSmoke;
-            playersAge.Location = new Point(592, 535);
+            playersAge.Location = new Point(298, 526);
             playersAge.Name = "playersAge";
             playersAge.Size = new Size(2, 27);
             playersAge.TabIndex = 35;
@@ -407,14 +407,14 @@
             menuStrip1.ImageScalingSize = new Size(24, 24);
             menuStrip1.Location = new Point(0, 0);
             menuStrip1.Name = "menuStrip1";
-            menuStrip1.Size = new Size(1307, 24);
+            menuStrip1.Size = new Size(896, 24);
             menuStrip1.TabIndex = 36;
             menuStrip1.Text = "menuStrip1";
             // 
             // button2
             // 
             button2.BackColor = Color.Plum;
-            button2.Location = new Point(701, 512);
+            button2.Location = new Point(364, 516);
             button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
             button2.Size = new Size(148, 45);
@@ -429,7 +429,7 @@
             rosterList.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             rosterList.FormattingEnabled = true;
             rosterList.ItemHeight = 25;
-            rosterList.Location = new Point(977, 126);
+            rosterList.Location = new Point(534, 426);
             rosterList.Name = "rosterList";
             rosterList.Size = new Size(284, 279);
             rosterList.TabIndex = 38;
@@ -440,7 +440,7 @@
             label3.BackColor = Color.Transparent;
             label3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.WhiteSmoke;
-            label3.Location = new Point(504, 441);
+            label3.Location = new Point(220, 432);
             label3.Name = "label3";
             label3.Size = new Size(100, 25);
             label3.TabIndex = 39;
@@ -453,7 +453,7 @@
             label9.BackColor = Color.Transparent;
             label9.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.WhiteSmoke;
-            label9.Location = new Point(610, 441);
+            label9.Location = new Point(316, 432);
             label9.Name = "label9";
             label9.Size = new Size(0, 25);
             label9.TabIndex = 40;
@@ -463,7 +463,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkGray;
-            ClientSize = new Size(1307, 715);
+            ClientSize = new Size(896, 715);
             Controls.Add(label9);
             Controls.Add(label3);
             Controls.Add(rosterList);

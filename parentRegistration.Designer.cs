@@ -56,7 +56,7 @@
             playerPhoneNumber.BackColor = Color.Transparent;
             playerPhoneNumber.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             playerPhoneNumber.ForeColor = Color.WhiteSmoke;
-            playerPhoneNumber.Location = new Point(136, 323);
+            playerPhoneNumber.Location = new Point(84, 320);
             playerPhoneNumber.Name = "playerPhoneNumber";
             playerPhoneNumber.Size = new Size(71, 25);
             playerPhoneNumber.TabIndex = 50;
@@ -64,7 +64,7 @@
             // 
             // textBox9
             // 
-            textBox9.Location = new Point(282, 321);
+            textBox9.Location = new Point(173, 317);
             textBox9.Margin = new Padding(3, 2, 3, 2);
             textBox9.Name = "textBox9";
             textBox9.Size = new Size(309, 31);
@@ -74,7 +74,7 @@
             // 
             comboBox1.FormattingEnabled = true;
             comboBox1.Items.AddRange(new object[] { "AL", "AK", "AZ", "AR", "CA", "CO", "CT", "DE", "FL", "GA", "HI", "ID", "IL", "IN", "IA", "KS", "KY", "LA", "ME", "MD", "MA", "MI", "MN", "MS", "MO", "MT", "NE", "NV", "NH", "NJ", "NM", "NY", "NC", "ND", "OH", "OK", "OR", "PA", "RI", "SC", "SD", "TN", "TX", "UT", "VT", "VA", "WA", "WV", "WI", "WY" });
-            comboBox1.Location = new Point(282, 252);
+            comboBox1.Location = new Point(173, 248);
             comboBox1.Margin = new Padding(2);
             comboBox1.Name = "comboBox1";
             comboBox1.Size = new Size(64, 33);
@@ -86,7 +86,7 @@
             label8.BackColor = Color.Transparent;
             label8.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.WhiteSmoke;
-            label8.Location = new Point(361, 255);
+            label8.Location = new Point(252, 251);
             label8.Name = "label8";
             label8.Size = new Size(44, 25);
             label8.TabIndex = 47;
@@ -94,7 +94,7 @@
             // 
             // textBox10
             // 
-            textBox10.Location = new Point(415, 253);
+            textBox10.Location = new Point(306, 249);
             textBox10.Margin = new Padding(3, 2, 3, 2);
             textBox10.Name = "textBox10";
             textBox10.Size = new Size(78, 31);
@@ -106,7 +106,7 @@
             label7.BackColor = Color.Transparent;
             label7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.WhiteSmoke;
-            label7.Location = new Point(136, 254);
+            label7.Location = new Point(94, 248);
             label7.Name = "label7";
             label7.Size = new Size(61, 25);
             label7.TabIndex = 45;
@@ -118,7 +118,7 @@
             label6.BackColor = Color.Transparent;
             label6.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.WhiteSmoke;
-            label6.Location = new Point(99, 287);
+            label6.Location = new Point(12, 283);
             label6.Name = "label6";
             label6.Size = new Size(143, 25);
             label6.TabIndex = 44;
@@ -126,7 +126,7 @@
             // 
             // textBox8
             // 
-            textBox8.Location = new Point(282, 287);
+            textBox8.Location = new Point(173, 283);
             textBox8.Margin = new Padding(3, 2, 3, 2);
             textBox8.Name = "textBox8";
             textBox8.Size = new Size(309, 31);
@@ -138,7 +138,7 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.WhiteSmoke;
-            label5.Location = new Point(136, 188);
+            label5.Location = new Point(70, 182);
             label5.Name = "label5";
             label5.Size = new Size(85, 25);
             label5.TabIndex = 42;
@@ -150,7 +150,7 @@
             label4.BackColor = Color.Transparent;
             label4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.WhiteSmoke;
-            label4.Location = new Point(136, 222);
+            label4.Location = new Point(105, 215);
             label4.Name = "label4";
             label4.Size = new Size(50, 25);
             label4.TabIndex = 41;
@@ -158,7 +158,7 @@
             // 
             // textBox7
             // 
-            textBox7.Location = new Point(282, 219);
+            textBox7.Location = new Point(173, 215);
             textBox7.Margin = new Padding(3, 2, 3, 2);
             textBox7.Name = "textBox7";
             textBox7.Size = new Size(309, 31);
@@ -166,7 +166,7 @@
             // 
             // textBox6
             // 
-            textBox6.Location = new Point(282, 186);
+            textBox6.Location = new Point(173, 182);
             textBox6.Margin = new Padding(3, 2, 3, 2);
             textBox6.Name = "textBox6";
             textBox6.Size = new Size(309, 31);
@@ -174,7 +174,7 @@
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(282, 48);
+            textBox3.Location = new Point(173, 44);
             textBox3.Margin = new Padding(3, 2, 3, 2);
             textBox3.Name = "textBox3";
             textBox3.Size = new Size(309, 31);
@@ -182,7 +182,7 @@
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(282, 79);
+            textBox2.Location = new Point(173, 75);
             textBox2.Margin = new Padding(3, 2, 3, 2);
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(309, 31);
@@ -194,7 +194,7 @@
             parent1LastName.BackColor = Color.Transparent;
             parent1LastName.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             parent1LastName.ForeColor = Color.WhiteSmoke;
-            parent1LastName.Location = new Point(136, 84);
+            parent1LastName.Location = new Point(27, 80);
             parent1LastName.Name = "parent1LastName";
             parent1LastName.Size = new Size(106, 25);
             parent1LastName.TabIndex = 34;
@@ -206,7 +206,7 @@
             parent1.BackColor = Color.Transparent;
             parent1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             parent1.ForeColor = Color.WhiteSmoke;
-            parent1.Location = new Point(136, 50);
+            parent1.Location = new Point(27, 46);
             parent1.Name = "parent1";
             parent1.Size = new Size(108, 25);
             parent1.TabIndex = 33;
@@ -219,7 +219,7 @@
             checkBox1.BackColor = Color.Transparent;
             checkBox1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             checkBox1.ForeColor = Color.WhiteSmoke;
-            checkBox1.Location = new Point(22, 138);
+            checkBox1.Location = new Point(173, 133);
             checkBox1.Margin = new Padding(2);
             checkBox1.Name = "checkBox1";
             checkBox1.Size = new Size(238, 29);
@@ -229,7 +229,7 @@
             // 
             // btnParentCancel
             // 
-            btnParentCancel.Location = new Point(215, 377);
+            btnParentCancel.Location = new Point(173, 373);
             btnParentCancel.Margin = new Padding(2);
             btnParentCancel.Name = "btnParentCancel";
             btnParentCancel.Size = new Size(115, 36);
@@ -241,7 +241,7 @@
             // parSubmit
             // 
             parSubmit.BackColor = Color.Plum;
-            parSubmit.Location = new Point(377, 372);
+            parSubmit.Location = new Point(352, 369);
             parSubmit.Margin = new Padding(3, 2, 3, 2);
             parSubmit.Name = "parSubmit";
             parSubmit.Size = new Size(130, 45);
@@ -255,7 +255,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkGray;
-            ClientSize = new Size(845, 518);
+            ClientSize = new Size(515, 447);
             Controls.Add(parSubmit);
             Controls.Add(btnParentCancel);
             Controls.Add(checkBox1);

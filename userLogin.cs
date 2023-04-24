@@ -17,6 +17,18 @@ namespace Gui_Assignment
         {
             InitializeComponent();
         }
+        private void DisplayLoadingScreen()
+        {
+            if (InvokeRequired)
+            {
+                Invoke(new Action(DisplayLoadingScreen));
+                return;
+            }
+            using (LoadingScreen loadingScreen = new LoadingScreen())
+            {
+                loadingScreen.Show();
+            }
+        }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
@@ -30,6 +42,13 @@ namespace Gui_Assignment
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            linkLabel1.LinkVisited = true;
+            string url = "http://www.eastbaysoldiers.org";
+            System.Diagnostics.Process.Start(url);
+        }
+
+        private void userLogin_Load(object sender, EventArgs e)
         {
 
         }

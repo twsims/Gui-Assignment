@@ -130,7 +130,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkGray;
-            ClientSize = new Size(476, 402);
+            ClientSize = new Size(409, 394);
             Controls.Add(linkLabel1);
             Controls.Add(label3);
             Controls.Add(btnLogin);
@@ -143,6 +143,7 @@
             Margin = new Padding(4, 5, 4, 5);
             Name = "userLogin";
             Text = "User Login";
+            Load += userLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
