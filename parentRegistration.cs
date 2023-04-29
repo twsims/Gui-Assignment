@@ -106,6 +106,28 @@ namespace Gui_Assignment
         {
             // MessageBox.Show("You have added parent information to your player's profile. Please review Conduct Policy");
             // Create instances of Parent, player and coach
+            StreamWriter parentFile = new StreamWriter("C:\\Users\\twsim\\OneDrive\\Documents\\UAT\\MS 539\\Parentfile.txt");
+
+            try
+            { //This finds each textbox controls and writes the info stored in each textbox to a textfile. 
+                foreach (Control x in this.Controls)
+                {
+                    if (x is TextBox)
+                    {
+                        parentFile.WriteLine(x.ToString());
+                    }
+                }
+
+                MessageBox.Show("Data saved properly!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error saving data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            //Flush the file and close the file
+            parentFile.Flush();
+            parentFile.Close();
+
             Player player = new Player("Xavier", "Sims", 13, "Point Guard");
             Coach coach = new Coach("Terrance", "Sims", 47, "Fundamentals");
             Parent parent = new Parent("Meah", "Sims", 44, "Xavier Sims");

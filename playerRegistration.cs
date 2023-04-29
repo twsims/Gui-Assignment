@@ -11,7 +11,7 @@ sure I did not miss any key topics.  The next step in building the forms took qu
 research.  I believe the next assignment will be a considerable drop in time spent as the components needed
 can be easily added.  I will spend more time on the syntax of the code I need versus understanding the component itself. 
  
- 3/27/2023 - Update for Error exception handling I estimated roughly 2 hours to complete the process.
+3/27/2023 - Update for Error exception handling I estimated roughly 2 hours to complete the process.
 This was a bit more daunting than I expected as I had to account for the various patterns associated to phone number
 
 4/5/2023 - Updated creating a function to add a player to a team and this hould have been roughly 4 hours but I have been dealing with some 
@@ -20,7 +20,7 @@ store the data, but still trying to perfect the for each for a specific control.
 write it directly to the file.  I also have some issues with the Git push as it erased all my local data and I had to write the code over. So that was unexpected.  I created a text file to store text from one text box
 and created a random generator to pick a jersey number for a player. Still a week behind now with having to write the code over I may be 10 days behind. 
  
- 4/12/2023 - update to include the arrays and list with some user string functions.  This process was a little tedious as I had to figure out how to incorporate the assingment into my project.  I initially scheduled 10 hours to review all the lectures and read the chapters
+4/12/2023 - update to include the arrays and list with some user string functions.  This process was a little tedious as I had to figure out how to incorporate the assingment into my project.  I initially scheduled 10 hours to review all the lectures and read the chapters
 related to the subject.  I was able to complete this section in a shorter time frame as I was able to understand the material quicker than expected.  I was able to add an array of players with a list of scores and utilizie string functions to display the information in a List box.
 This does not have any significant impact on my project but it is something I can incorporate into the project once I fine tune what I want this project to be overall.
 
@@ -32,7 +32,11 @@ the parent registration form you will populate the inherited classes as they wil
 so I removed the 4K image and switched to a smoke gray background that allowed the white font to stand out.  Next was to properly align all the text boxes, date picker and combo boxes to allow for a simple interface.
 This allowed the application to flow smoothly.  The user login screen we added a forgot username/password link that is currently only pointing to a website but I need to add a databse component to get that piece to work. THis took roughly 5 hours as I spent the majority of my time
 reviewing UI sites to get a better understanding of interface design.   
+
+4/26/2023 - FInal adjustments to my project included the ability to cycle through Text box controls on a form and write the data stored on the form into a text file.  THis allowed the form to serve a bigger purposes when this translates to 
+moving data to a database in the future.  These adjustments to fine tune the player registration form allowed me to apply the same principles to the parent registration form.  
  */
+
 
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
@@ -117,8 +121,15 @@ namespace Gui_Assignment
             StreamWriter playerFile = new StreamWriter("C:\\Users\\twsim\\OneDrive\\Documents\\UAT\\MS 539\\Playerfile.txt");
 
             try
-            {
-                playerFile.WriteLine(textBox2.Text);
+            { //This finds each textbox controls and writes the info stored in each textbox to a textfile. 
+                foreach (Control x in this.Controls)
+                { 
+                  if(x is TextBox)
+                    {
+                        playerFile.WriteLine(x.ToString());
+                    }
+                } 
+                    
                 MessageBox.Show("Data saved properly!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)
