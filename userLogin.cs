@@ -44,8 +44,14 @@ namespace Gui_Assignment
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             linkLabel1.LinkVisited = true;
-            string url = "http://www.eastbaysoldiers.org";
-            System.Diagnostics.Process.Start(url);
+            try 
+            {
+                System.Diagnostics.Process.Start("http://www.eastbaysoldiers.org");
+            }
+            catch (Exception ex) 
+            {
+                MessageBox.Show("This site is unavailable at this time: " + ex.Message);
+            }
         }
 
         private void userLogin_Load(object sender, EventArgs e)
